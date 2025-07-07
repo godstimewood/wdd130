@@ -5,6 +5,7 @@
     border: 1px solid rgba(0,0,0,0.1);
     background-color: #247;
     color: #fff;
+    position: relative;
 }
 
 .callout img {
@@ -27,4 +28,12 @@ cite {
     padding-bottom: 3px;
     font-size: smaller;
     text-align: right;
+}
+
+.child {
+    font-size: 10px;
+    position: absolute;
+    right: 48px;
+    top: 95px;
+    color: lightgrey;
 }
