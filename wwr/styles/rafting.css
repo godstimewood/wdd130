@@ -81,3 +81,8 @@ header nav a {
     font-weight: bold;
 }
 
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
