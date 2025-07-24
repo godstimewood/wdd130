@@ -19,22 +19,39 @@ body {
 }
 
 header, main, nav, footer{
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+    overflow: hidden;
+}
+
+.logo-box img {
+    width: 100%;
+}
+.nav-links {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--accent2-color);
 }
 
 h1, h2 {
     font-family: var(--header-font);
     color: var(--primary-color);
-}
-
-/* nav, p, section, article { 
-     margin: 16px; 
-     padding: 8px; 
-}*/
-
-.socaialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -72,17 +89,69 @@ article {
     width: 150px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: var(--accent1-color)
+.history {
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    justify-self: center; 
+    align-self: center; 
+}
+
+.adventure {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    overflow: auto;
+    gap: .25rem;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
+    margin: 20px;
 }
 
 .adventure p {
     font-weight: bold;
+    margin-top: 1rem;
 }
 
-.nav-links {
+.adventure img {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 200px;
+} 
+
+footer p{
+    align-self: center;
+    justify-self: center;
+}
+
+.socaialmedia a {
+    text-decoration: none;
 }
