@@ -19,29 +19,31 @@ body {
 }
 
 header, main, nav, footer{
-    max-width: 840px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
 header {
     background-color: var(--primary-color);
-    padding: 10px;
-    margin-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    justify-items: end;
+    justify-items: start;
     overflow: hidden;
 }
 
 .logo-box img {
-    width: 100%;
+    width: 100px;
+    height: auto;
+    display: flex;
 }
+
 .nav-links {
     padding: 20px;
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .nav-links a {
@@ -64,6 +66,11 @@ h1, h2 {
     height: auto;
 }
 
+.hero article img {
+    float: right;
+    width: 150px;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -84,15 +91,11 @@ article {
     padding: 8px;
 }
 
-.hero article img {
-    float: right;
-    width: 150px;
-}
-
 .history {
     padding: 0 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
 }
 
 .history h2 {
@@ -125,11 +128,6 @@ article {
     margin: 20px;
 }
 
-.adventure p {
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
 .adventure img {
     display: flex;
     width: 100%;
@@ -144,7 +142,8 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-evenly;
 } 
 
 footer p{
@@ -156,9 +155,128 @@ footer p{
     text-decoration: none;
 }
 
+.wireframe {
+    align-self: center;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 .socialmedia {
     display: flex;
     gap: 5px;
     justify-content: flex-end;
     align-items: center;
+}
+
+form fieldset h1 {
+    top: 0;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff00;
+    color: var(--primary-color);
+    font-size: x-large;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.staff {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    /* overflow: auto; */
+    gap: .25rem;
+}
+
+.staff h2 {
+    grid-column: 1/-1;
+    margin: 20px;   
+}
+
+.staff img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto; 
+}
+
+form {
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    padding: .3rem;
+    top: 0;
+} 
+
+label, input, button, select, textarea {
+    font-family: roboto, arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1.1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1em;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    color: #fff;
+    background-color: var(--primary-color);
+    margin: 1rem;
+    margin-left: 0;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-item p {
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+}
+
+.column2 p {
+    margin-bottom: 0;
+    border-bottom-width: 1px;
+} 
+
+.address {
+    margin-top: 1rem;
+}
+
+.address p {
+    padding: .3rem;
+}
+
+.reason {
+    padding-bottom: 1rem;
+}
+
+.map {
+    margin-top: 40px;
+    border-style: ridge;
 }

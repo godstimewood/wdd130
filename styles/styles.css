@@ -8,7 +8,26 @@
     --headline-color: steelblue;
     --height: auto;
     --link-color: white;
+    --paragragh-font: 'Anek Bangla', sans-serif;
     }
+
+body {
+    font-family: var(--paragragh-font);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1.15;
+}
+
+a {
+    color: #0808b8;
+    text-decoration: none;
+}
+
+p {
+    padding: 1rem 0;
+    font-family: var(--paragragh-font);
+}
 
 nav {
     background-color: steelblue;
@@ -16,11 +35,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;   
 }
 
 nav a {
-    color: var(--link-color);
+    color: #fff;
     display: block;
     padding: 20px;
     text-decoration: none;
@@ -39,20 +58,18 @@ h1 {
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: var(--height);
     border: 1px solid blue;
     padding: 2px;
     box-shadow: 0 0 30px grey;
     float: right;
+    margin: 1rem;
 }
 
 aside img {
-    width: 200px;
-    height: var(--height);}
-
-main {
-    max-width: 840px;
+    width: 250px;
+    height: var(--height);
 }
 
 aside {
@@ -63,7 +80,7 @@ aside {
 }
 
 header, footer, .grid {
-    max-width: 840px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -81,20 +98,30 @@ aside h2 {
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: 1rem 0 1rem 0;
     border: 1px solid rgb(0 0 0/ 10%);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+    list-style: none;
 }
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-gap: 1rem;
-
+    /* grid-gap: 1rem; */
+    justify-content: space-between;
+    gap: 0 3rem;
 }
 
 .content {
     padding: 0 1rem 0 1rem;
 }
 
+.box a {
+    text-decoration: none;
+}
+
+.box li {
+    padding: 0.5rem 0 0.5rem 0;
+}

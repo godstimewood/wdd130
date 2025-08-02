@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact us page of Rapids Water Rafting site.">
+    <meta name="author" content="Godstime Wozuame">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/z-crossedoars.jpeg" alt="logo image">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <form>
+                <fieldset>
+                    <h1>Contact Us</h1>
+                    <div class="form-item column1">
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" name="name" id="name" placeholder="John Doe"><br>
+                        <label for="useremail">Email:</label><br>
+                        <input type="email" name="useremail" id="useremail" placeholder="johndoe@email.com"><br>
+                    </div>
+                    <div class="form-item column2">
+                        <p>Reason for contacting us:</p><br>
+                        <div class="reason">
+                            <input type="radio" id="general" name="reason">
+                            <label for="general">General Inquiry</label><br>
+                            <input type="radio" id="reservation" name="reaseon">
+                            <label for="reservation">Reservation Questions</label><br>
+                            <input type="radio" id="suggestion" name="reason">
+                            <label for="suggestion">Website Suggestion</label><br>
+                        </div>
+                    </div>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" rows="3">Enter your message here</textarea><br>
+                    <label for="subscribe">Please subscribe to the monthly newsletter</label>
+                    <input type="checkbox" name="subscribe" id="subscribe"><br>
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+            <section class="address">
+                <h2>Office Address</h2>
+                <p>525 S Center St <br>Rexburg, ID 83460</p>
+                <p>Phone: (123) 456 7890</p>
+                <p>Email: <a href="mailto">info@rapidswaterrafting.com</a></p>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.7375647895526!2d-111.78430461206244!3d43.8171763138822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b0040479549%3A0x54572291de1aa831!2sS%20Center%20St%2C%20Rexburg%2C%20ID%2C%20USA!5e0!3m2!1sen!2sgh!4v1754028517348!5m2!1sen!2sgh"
+                    width="500" height="350" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+        <section class="staff">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/manager.jpg" alt="operation manager">
+                <figcaption>Operation Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/client_support.jpg" alt="client support">
+                <figcaption>Customer Service</figcaption>
+            </figure>
+            <figure>
+                <img src="images/safety_guard.jpg" alt="safety guard">
+                <figcaption>Safety Guard</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 | Rapids Water Rafting | Godstime Wozuame</p>
+        <a href="images/Contact page.webp" class="wireframe">View Wireframe</a>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook_icon.png" alt="facebook icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="linkedin icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
