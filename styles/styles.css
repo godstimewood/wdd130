@@ -31,7 +31,6 @@ p {
 
 nav {
     background-color: steelblue;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -41,7 +40,7 @@ nav {
 nav a {
     color: #fff;
     display: block;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 1.2rem;
