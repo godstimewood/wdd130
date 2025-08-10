@@ -562,12 +562,3 @@ tbody tr:nth-child(even) {
     color: #1a6bb3;
     font-size: 2rem;
 }
-
-.contact-button {
-    display: inline-block;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    text-decoration: none;
-}
