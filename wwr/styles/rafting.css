@@ -18,7 +18,7 @@ body {
     color: var(--accent1-color)
 }
 
-header, main, nav, footer{
+header, nav, main, footer{
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@ header {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-items: start;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .logo-box img {
@@ -72,7 +72,7 @@ h1, h2 {
     width: 150px;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -191,7 +191,6 @@ form fieldset h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    /* overflow: auto; */
     gap: .25rem;
 }
 
@@ -279,4 +278,296 @@ button:hover {
 .map {
     margin-top: 40px;
     border-style: ridge;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 90px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    color: var(--accent2-color);
+}
+
+.subscribe {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    max-width: 840px;
+    margin: 3rem auto;
+    min-height: 400px;
+}
+
+.subscribe img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    grid-column: 1 / 2;
+}
+
+.subscribe form {
+    grid-column: 2 / 3;
+    background: rgba(255,255,255,0.95);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 260px;
+    max-width: 350px;
+    margin-left: -80px;
+}
+
+.subscribe label {
+    font-weight: bold;
+    color: #1a6bb3;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"] {
+    padding: 0.7rem;
+    border: 1px solid #EEC784;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.subscribe input[type="text"]:focus,
+.subscribe input[type="email"]:focus {
+    border: 1.5px solid #1a6bb3;
+}
+
+.subscribe button {
+    background: #1a6bb3;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.subscribe button:hover {
+    background: #EEC784;
+    color: #1a1e1e;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.testimonials h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    color: #1a6bb3;
+}
+
+.testimonials div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(238, 199, 132, 0.15);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem 1rem;
+    min-width: 180px;
+}
+
+.testimonials img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.hero-heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 107, 179, 0.85);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.join-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 107, 179, 0.85);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #EEC784;
+    color: #1a1e1e;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.cta-button:hover {
+    background-color: #1a6bb3;
+    color: #fff;
+}
+
+table {
+    width: 90%;
+    margin: 3rem auto 2rem auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+thead {
+    background: #1a6bb3;
+    color: #fff;
+}
+
+thead th {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #EEC784;
+    text-align: center;
+}
+
+tbody td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #EEC784;
+    text-align: center;
+    font-size: 1rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.trip-intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f5f5;
+    color: #1a1e1e;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.trip-intro h1 {
+    margin-bottom: 1.2rem;
+    color: #1a6bb3;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trip-intro p {
+    margin-bottom: 0;
+    font-size: 1.15rem;
+    color: #222;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    align-items: start;
+    justify-items: center;
+}
+
+.trip-list h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a6bb3;
+}
+
+.trip-list img {
+    width: 100%;
+    max-width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-bottom: 1rem;
+}
+
+.trip-table h2 {
+    text-align: center;
+    margin: 2rem auto 1rem auto;
+    color: #1a6bb3;
+    font-size: 2rem;
+}
+
+.contact-button {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
 }
